@@ -1,0 +1,53 @@
+{% load static %}
+<html>
+{% block carousel %}
+		<!-- start_Slider -->
+		<div clas="blog-wrapper">
+        <div class="post-slider">
+            <h1 class="slider-title">Editor's Favourite</h1>
+            <i class="fas fa-chevron-left prev"></i>
+            <i class="fas fa-chevron-right next"></i>
+		   
+			<div class="post-wrapper">
+                <div class="post-carousel">
+                    <img src="{% static "img\uob.jpg" %}" alt="A post reflecting on what you’ve enjoyed studying this year" class="slider-image">
+                    <div class="post-info">
+                        <h4><a href="/post/1/">A post reflecting on what you’ve enjoyed studying this year</a></h4>
+                        <i class="far fa-user"> lxp979</i>
+                        &nbsp;
+                        <i class="far fa-calendar"> Jun 24, 2020</i>
+                    </div>
+                </div>
+                <div class="post-carousel">
+                    <img src="{% static "img\futurethoughts.jpg" %}" alt="A post looking to the future that discusses what you’re looking forward to learning about in the upcoming academic year." class="slider-image">
+                    <div class="post-info">
+                        <h4><a href="/post/2/">A post looking to the future that discusses what you’re looking forward to learning about in the upcoming academic year.</a></h4>
+                        <i class="far fa-user"> lxp979</i>
+                        &nbsp;
+                        <i class="far fa-calendar"> Jun 25, 2020</i>
+                    </div>
+                </div>
+                <div class="post-carousel">
+                    <img src="{% static "img\djangogirls.jpg" %}" alt="A post discussing how your site is structured and in your own words a description of how Django works." class="slider-image">
+                    <div class="post-info">
+                        <h4><a href="/post/3/">A post discussing how your site is structured and in your own words a description of how Django works.</a></h4>
+                        <i class="far fa-user"> lxp979</i>
+                        &nbsp;
+                        <i class="far fa-calendar"> Jun 26, 2020</i>
+                    </div>
+                </div>
+                <div class="post-carousel">
+                    <img src="{% static "img\clock.png" %}" alt="placeholder #1" class="slider-image">
+                    <div class="post-info">
+                        <h4><a href="/post/4/">You're nice.</a></h4>
+                        <i class="far fa-user"> lxp979</i>
+                        &nbsp;
+                        <i class="far fa-calendar"> Jun 26, 2020</i>
+                    </div>
+                </div>
+            </div>
+        <!-- end__Slider -->
+		</div>
+		</div>
+{% endblock %}
+</html>
