@@ -133,6 +133,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 
-LOGIN_REDIRECT_URL = '/'
+PROJECT_DIR  = os.path.dirname(__file__) 
+
+STATIC_ROOT = os.path.join(PROJECT_DIR,'static')
 STATIC_URL = '/static/'
-STATIC_ROOT= os.path.join(BASE_DIR, 'static')
+
+STATICFILES_DIRS = (
+    os.path.join(PROJECT_DIR, 'staticfiles'),
+)
